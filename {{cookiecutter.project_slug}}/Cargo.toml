@@ -1,0 +1,16 @@
+[package]
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.email }}>"]
+name = "{{ cookiecutter.project_name }}"
+version = "0.0.1"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+pyo3 = "0.4.1"
+
+
+[profile.release]
+lto = true
