@@ -9,6 +9,20 @@
 Development
 ========================================
 
+``make wheel`` :
+
+.. image:: /images/wheel.png
+
+
+``make test`` :
+
+.. image:: /images/test.png
+
+
+``make bench``:
+
+.. image:: /images/bench.png
+
 
 
 License
