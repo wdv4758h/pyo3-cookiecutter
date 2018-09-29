@@ -1,6 +1,7 @@
 wheel: has_pyo3_pack
-	# RUSTFLAGS="-C link-arg=-s" python3 setup.py bdist_wheel
-	# pyo3-pack build -i python3.7 --skip-auditwheel
+	@echo "===> building wheels"
+	@# RUSTFLAGS="-C link-arg=-s" python3 setup.py bdist_wheel
+	@# pyo3-pack build -i python3.7 --skip-auditwheel
 	pyo3-pack build --skip-auditwheel
 
 install:
