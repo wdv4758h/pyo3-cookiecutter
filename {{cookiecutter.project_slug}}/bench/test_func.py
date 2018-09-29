@@ -2,13 +2,13 @@ import pytest
 import {{cookiecutter.project_slug}}
 
 
-def hello():
-    print("hello")
+def func(data):
+    print(data)
 
 @pytest.mark.benchmark(group='{{cookiecutter.project_slug}}')
-def test_uuid1_rs(benchmark):
-    benchmark({{cookiecutter.project_slug}}.hello)
+def test_func_rs(benchmark):
+    benchmark({{cookiecutter.project_slug}}.func, "test")
 
 @pytest.mark.benchmark(group='{{cookiecutter.project_slug}}')
-def test_uuid1_py(benchmark):
-    benchmark(hello)
+def test_func_py(benchmark):
+    benchmark(func, "test")
